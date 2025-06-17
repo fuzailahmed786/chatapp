@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Login -->
+  <div class="login-screen" id="login">
+    <h1>Join Chat</h1>
+    <input type="text" id="username" placeholder="Enter your name..." />
+    <button onclick="joinChat()">Join</button>
+    <p>&copy; 2025 Fuzail Ahmed. All rights reserved.</p>
+  </div>
+
+  <!-- Chat -->
+  <div class="chat-container hidden" id="chat">
+    <aside class="sidebar">
+      <h3>🧑‍🤝‍🧑 Online</h3>
+      <ul id="userList"></ul>
+    </aside>
+
+    <main class="main-chat">
+      <header class="chat-header">
+        <h2>Chat App</h2>
+      </header>
+      <div class="chat-box" id="messages"></div>
+      <div class="typing" id="typing"></div>
+      <div class="chat-input">
+        <input id="msgInput" placeholder="Type your message..." autocomplete="off" />
+      </div>
+      <p>&copy; 2025 Fuzail Ahmed. All rights reserved.</p>
+    </main>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
