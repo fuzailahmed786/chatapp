@@ -13,7 +13,6 @@ function joinChat() {
 const input = document.getElementById("msgInput");
 const messages = document.getElementById("messages");
 const typing = document.getElementById("typing");
-const userList = document.getElementById("userList");
 
 let typingTimer;
 
@@ -63,13 +62,3 @@ socket.on('message', (data) => {
 // Typing indicator
 socket.on('typing', (msg) => typing.textContent = msg);
 socket.on('stopTyping', () => typing.textContent = '');
-
-// Online user list
-socket.on('userList', (users) => {
-  userList.innerHTML = '';
-  users.forEach(user => {
-    const li = document.createElement('li');
-    li.textContent = user;
-    userList.appendChild(li);
-  });
-});
