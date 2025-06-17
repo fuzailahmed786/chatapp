@@ -51,28 +51,6 @@ body {
   height: 100vh;
 }
 
-/* Sidebar */
-.sidebar {
-  width: 200px;
-  background-color: #1a1a1a;
-  padding: 20px;
-  border-right: 1px solid #333;
-}
-
-.sidebar h3 {
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-#userList {
-  list-style: none;
-}
-
-#userList li {
-  padding: 5px 0;
-  color: #ddd;
-}
-
 /* Main Chat */
 .main-chat {
   flex: 1;
@@ -97,7 +75,7 @@ body {
 }
 
 .chat-bubble {
-  max-width: 70%;
+  max-width: 40%;
   padding: 10px 15px;
   border-radius: 15px;
   background-color: #333;
