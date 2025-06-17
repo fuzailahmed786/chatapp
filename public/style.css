@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  height: 100vh;
+}
+
+/* Login Screen */
+.login-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: #1e1e1e;
+  gap: 20px;
+}
+
+.login-screen input, .login-screen button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.login-screen input {
+  width: 250px;
+  background-color: #333;
+  color: white;
+}
+
+.login-screen button {
+  background-color: #2196f3;
+  color: white;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Chat Layout */
+.chat-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-right: 1px solid #333;
+}
+
+.sidebar h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#userList {
+  list-style: none;
+}
+
+#userList li {
+  padding: 5px 0;
+  color: #ddd;
+}
+
+/* Main Chat */
+.main-chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  padding: 15px;
+  background-color: #222;
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-bubble {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  background-color: #333;
+  word-wrap: break-word;
+  position: relative;
+}
+
+.chat-bubble.self {
+  align-self: flex-end;
+  background-color: #1976d2;
+}
+
+.chat-bubble.system {
+  align-self: center;
+  background-color: #444;
+  color: #ccc;
+  font-style: italic;
+}
+
+.chat-bubble .timestamp {
+  font-size: 11px;
+  color: #bbb;
+  text-align: right;
+  margin-top: 4px;
+}
+
+/* Typing Indicator */
+.typing {
+  font-size: 14px;
+  color: #bbb;
+  margin-left: 20px;
+  height: 20px;
+}
+
+/* Input Box */
+.chat-input {
+  padding: 20px;
+  border-top: 1px solid #333;
+}
+
+.chat-input input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2a2a2a;
+  color: white;
+}
